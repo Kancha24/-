@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกมคำสันธานแสนสนุก</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-menu" class="screen active">
+        <h1>คำสันธานแสนสนุก</h1>
+        <button id="start-btn">เริ่มเกม</button>
+        <button id="description-btn">คำอธิบายเกม</button>
+    </div>
+
+    <div id="description-screen" class="screen">
+        <h2>วิธีเล่นเกม/กฎ</h2>
+        <p>เป็นเกมที่ให้เลือกเติมคำศัพท์... (ใส่คำอธิบายของคุณตรงนี้)</p>
+        <button id="back-btn">ย้อนกลับ</button>
+    </div>
+
+    <div id="loading-screen" class="screen">
+        <h2>เรื่องที่ 1</h2>
+        <p>...-ชื่อเรื่อง-...</p>
+        <div class="loading-bar-container">
+            <div id="loading-bar"></div>
+        </div>
+    </div>
+    
+    <div id="game-screen" class="screen">
+        <div class="character-area">
+            <img id="character-gif" src="placeholder.gif" alt="ตัวละครแสดงท่าทาง">
+        </div>
+        <div class="story-text">
+            <p id="story-sentence"></p>
+        </div>
+        <div id="choice-buttons" class="choice-buttons-area">
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
